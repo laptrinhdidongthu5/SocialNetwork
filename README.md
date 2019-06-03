@@ -1,3 +1,4 @@
+# Lưu ý phải RUN trên máy thật mới được nha, không lỗi firebase-ui not support this device nhé
 # SocialNetwork
 App messenger: login(register, forgot password, verification) , chat with fire base real time
 
