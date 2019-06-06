@@ -10,6 +10,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.internal.zzm;
 import com.google.firebase.messaging.RemoteMessage;
 
 import nhom1.project3.socialnetwork.R;
@@ -20,8 +23,11 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
     public void onMessageReceived(RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
 
-        NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         String NOTIFICATION_CHANNEL_ID = "SocialNetwork_Channel_1";
+        FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+
+        NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel notificationChannel = new NotificationChannel(NOTIFICATION_CHANNEL_ID, "Social Network Notifications", NotificationManager.IMPORTANCE_HIGH);
