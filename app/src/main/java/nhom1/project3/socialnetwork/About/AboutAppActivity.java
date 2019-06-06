@@ -12,7 +12,7 @@ import nhom1.project3.socialnetwork.R;
 public class AboutAppActivity extends AppCompatActivity {
 
     private Toolbar mToolbar;
-    private Button gitBtn, InstaBtn, TwBtn, LinBtn;
+    private Button gitBtn, fbBtn, LinBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,26 +26,25 @@ public class AboutAppActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         gitBtn = findViewById(R.id.git_btn);
-        InstaBtn = findViewById(R.id.insta_btn);
+        fbBtn = findViewById(R.id.fb_btn);
         LinBtn = findViewById(R.id.lin_btn);
-        TwBtn = findViewById(R.id.tw_btn);
 
         // 4 buttons
         // git button
         gitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://github.com/TheHasnatBD");
+                Uri uri = Uri.parse("https://github.com/joinKen");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
         });
 
         // instagram button
-        InstaBtn.setOnClickListener(new View.OnClickListener() {
+        fbBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://instagram.com/TheHasnatBD");
+                Uri uri = Uri.parse("https://www.facebook.com/it10069001");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
@@ -55,22 +54,11 @@ public class AboutAppActivity extends AppCompatActivity {
         LinBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://linkedin.com/in/TheHasnatBD");
+                Uri uri = Uri.parse("https://www.linkedin.com/in/source-instruction-b8a502158");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
         });
-
-        //twitter button
-        TwBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri uri = Uri.parse("https://twitter.com/TheHasnatBD");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
-        });
-
 
     }
 

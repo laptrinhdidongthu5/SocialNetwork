@@ -134,7 +134,7 @@
                             android:background="@drawable/ic_github" />
 
                         <Button
-                            android:id="@+id/insta_btn"
+                            android:id="@+id/fb_btn"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_margin="7dp"
