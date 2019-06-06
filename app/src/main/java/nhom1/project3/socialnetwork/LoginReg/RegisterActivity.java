@@ -104,8 +104,8 @@ public class RegisterActivity extends AppCompatActivity {
 
         } else if (TextUtils.isEmpty(mobile)){
             SweetToast.error(myContext, "Your mobile number is required.");
-        } else if (mobile.length() < 11){
-            SweetToast.error(myContext, "Mobile number should be min 11 characters.");
+        } else if (mobile.length() < 9){
+            SweetToast.error(myContext, "Mobile number should be min 9 characters.");
 
         } else if (TextUtils.isEmpty(password)){
             SweetToast.error(myContext, "Please fill this password field");
@@ -139,7 +139,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 storeDefaultDatabaseReference.child("user_gender").setValue("");
                                 storeDefaultDatabaseReference.child("user_profession").setValue("");
                                 storeDefaultDatabaseReference.child("created_at").setValue(ServerValue.TIMESTAMP);
-                                storeDefaultDatabaseReference.child("user_status").setValue("Hi, I'm new uMe user");
+                                storeDefaultDatabaseReference.child("user_status").setValue("Hi, I'm new Social Network user");
                                 storeDefaultDatabaseReference.child("user_image").setValue("default_image"); // Original image
                                 storeDefaultDatabaseReference.child("device_token").setValue(deviceToken);
                                 storeDefaultDatabaseReference.child("user_thumb_image").setValue("default_image")

@@ -18,7 +18,6 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
 
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
-
         super.onMessageReceived(remoteMessage);
 
         NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
@@ -49,11 +48,10 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
                 .setDefaults(Notification.DEFAULT_ALL)
                 .setWhen(System.currentTimeMillis())
                 .setSmallIcon(R.drawable.logo)
-                .setTicker("project3.nhom1.bd")
+                .setTicker("SocialNetwork")
                 .setPriority(Notification.PRIORITY_MAX)
                 .setContentTitle(notificationTitle)
                 .setContentText(notificationBody);
-
 
 
         // clicking notification goes to sender profile
@@ -69,12 +67,7 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
                 );
         notificationBuilder.setContentIntent(pendingIntent); // end
 
-
         int mNotificationId = (int) System.currentTimeMillis();
         notificationManager.notify(mNotificationId, notificationBuilder.build());
-
-
-
-
     }
 }
