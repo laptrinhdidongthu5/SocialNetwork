@@ -5,10 +5,9 @@
     <string name="give_correct_information">Please your give correct information. Because, your email &amp; phone number needs to be verification.</string>
 
     <!-- My Common Strings -->
-    <string name="student_name">Abdullah Al-Hasnat</string>
-    <string name="copyright">uMe © 2018</string>
+    <string name="student_name">Hoàng Tấn</string>
+    <string name="copyright">it1006 © 2019</string>
     <string name="profile_settings">My Profile</string>
-    <string name="thehasnatbd">TheHasnatBD</string>
     <string name="log_in">Log In</string>
     <string name="log_out">Log Out</string>
     <string name="profile">Profile</string>
@@ -25,21 +24,18 @@
     <string name="title_slide1">Friendship</string>
     <string name="desc_slide1">you can find a large number of people to build up friendship</string>
     <string name="title_slide2">No Cost</string>
-    <string name="desc_slide2">uMe is completely FREE of cost, no subscription fees.</string>
+    <string name="desc_slide2">SocialNetwork is completely FREE of cost, no subscription fees.</string>
     <string name="title_slide3">Chatting</string>
     <string name="desc_slide3">fully one to one personal chatting system</string>
     <string name="title_slide4">Secure</string>
-    <string name="desc_slide4">uMe keeps your messages secure</string>
+    <string name="desc_slide4">SocialNetwork keeps your messages secure</string>
 
 
     <!-- About App Strings -->
-    <string name="varsity_name">BANGLADESH UNIVERSITY</string>
-    <string name="instructor1_name">Md. Sadiq Iqbal</string>
-    <string name="instructor_name">Omor Faruk</string>
     <string name="about_text">This application is built for learning purpose.\nProject Source Code Link-</string>
-    <string name="project_git_link"><u>https://github.com/TheHasnatBD/uMe</u></string>
+    <string name="project_git_link"><u>https://github.com/laptrinhdidongthu5</u></string>
     <string name="about_app_detail">x</string>
-    <string name="student_id_details">B.Sc in Computer Science &amp; Engineering\nID: 201521 042 019</string>
+    <string name="student_id_details">16110454</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -59,6 +55,7 @@
     <string name="menu_search">Search</string>
     <string name="register_success_popup">Registered successfully.\nVerification email has been sent.\nPlease verify email.</string>
     <string name="recheck_gender">To save your changes, please check/recheck your GENDER.</string>
+    <string name="it1006">it1006</string>
 
     <string-array name="spinerViewPeople">
         <item>Default</item>

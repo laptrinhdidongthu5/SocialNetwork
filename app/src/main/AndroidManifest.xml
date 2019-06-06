@@ -79,8 +79,7 @@
             android:name=".Profile.ProfileActivity"
             android:configChanges="orientation|screenSize|screenLayout">
             <intent-filter>
-                <action android:name="com.infobox.hasnat.ume.ume_TARGET_NOTIFICATION" />
-
+                <action android:name="nhom1.project3.socialnetwork.SocialNetwork_TARGET_NOTIFICATION" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

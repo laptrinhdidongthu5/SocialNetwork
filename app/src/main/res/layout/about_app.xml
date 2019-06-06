@@ -55,83 +55,7 @@
                 android:layout_marginBottom="5dp"
                 app:cardCornerRadius="4dp"
                 app:cardElevation="3dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="instructed by"
-                        android:textSize="16sp"
-                        android:textStyle="bold|italic" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginLeft="60dp"
-                        android:layout_marginRight="60dp"
-                        android:background="@color/colorGray" />
-
-                    <!-- SADIQ SIR -->
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="30dp"
-                        android:src="@drawable/sadik_sir"
-                        app:civ_border_color="@color/colorPrimary"
-                        app:civ_border_width="0.70dp" />
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/instructor1_name"
-                        android:fontFamily="@font/comfortaa"
-                        android:textColor="@color/colorBlack"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Associate Professor &amp; Chairman\nDept of CSE, Bangladesh University"
-                        android:textAlignment="center"
-                        android:textStyle="normal" />
-
-
-                    <!-- FARUKH SIR -->
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/sir_image"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="30dp"
-                        android:src="@drawable/omor_sir"
-                        app:civ_border_color="@color/colorPrimary"
-                        app:civ_border_width="0.70dp" />
-
-
-                    <TextView
-                        android:id="@+id/sir_name"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/comfortaa"
-                        android:text="@string/instructor_name"
-                        android:textColor="@color/colorBlack"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/about_sir"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="30dp"
-                        android:text="Lecturer, Dept of CSE\nBangladesh University"
-                        android:textAlignment="center"
-                        android:textStyle="normal" />
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
+           </android.support.v7.widget.CardView>
 
             <!-- Developer part-->
             <android.support.v7.widget.CardView
@@ -156,7 +80,7 @@
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginTop="30dp"
-                        android:src="@drawable/hasnat"
+                        android:src="@drawable/it1006"
                         app:civ_border_color="@color/colorPrimary"
                         app:civ_border_width="0.70dp" />
 
@@ -182,7 +106,7 @@
                         android:id="@+id/about_dev1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Student, Bangladesh University"
+                        android:text="Student, HCMUTE"
                         android:textStyle="normal" />
 
                     <TextView
@@ -223,12 +147,6 @@
                             android:layout_margin="7dp"
                             android:background="@drawable/ic_linkedin" />
 
-                        <Button
-                            android:id="@+id/tw_btn"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_margin="7dp"
-                            android:background="@drawable/ic_twitter" />
 
                     </LinearLayout>
 
@@ -239,7 +157,7 @@
                         android:layout_below="@id/linLayout1"
                         android:layout_centerHorizontal="true"
                         android:layout_marginBottom="30dp"
-                        android:text="@string/thehasnatbd"
+                        android:text="@string/it1006"
                         android:textSize="20sp" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>

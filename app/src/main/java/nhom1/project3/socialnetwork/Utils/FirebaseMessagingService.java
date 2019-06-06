@@ -21,12 +21,11 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
 
         super.onMessageReceived(remoteMessage);
 
-
         NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        String NOTIFICATION_CHANNEL_ID = "uMe_Channel_1";
+        String NOTIFICATION_CHANNEL_ID = "SocialNetwork_Channel_1";
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationChannel notificationChannel = new NotificationChannel(NOTIFICATION_CHANNEL_ID, "uMe Notifications", NotificationManager.IMPORTANCE_HIGH);
+            NotificationChannel notificationChannel = new NotificationChannel(NOTIFICATION_CHANNEL_ID, "Social Network Notifications", NotificationManager.IMPORTANCE_HIGH);
 
             // Configure the notification channel.
             notificationChannel.setDescription("Channel description");
@@ -50,7 +49,7 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
                 .setDefaults(Notification.DEFAULT_ALL)
                 .setWhen(System.currentTimeMillis())
                 .setSmallIcon(R.drawable.logo)
-                .setTicker("infbox.com.bd")
+                .setTicker("project3.nhom1.bd")
                 .setPriority(Notification.PRIORITY_MAX)
                 .setContentTitle(notificationTitle)
                 .setContentText(notificationBody);
