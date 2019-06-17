@@ -71,6 +71,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
                             .networkPolicy(NetworkPolicy.OFFLINE) // for Offline
                             .placeholder(R.drawable.default_profile_image)
                             .into(holder.user_profile_image);
+                    Log.i("a", userProfileImage);
                 }
 
             }
@@ -114,21 +115,21 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
             if (from_user_ID.equals(sender_UID)){
                 holder.user_profile_image.setVisibility(View.GONE);
                 holder.receiverImageMsg.setVisibility(View.GONE);
-                //holder.senderImageMsg.setVisibility(View.VISIBLE);
+                holder.senderImageMsg.setVisibility(View.VISIBLE);
                 Picasso.get()
                         .load(message.getMessage())
-                        .networkPolicy(NetworkPolicy.OFFLINE) // for Offline
-                         //.placeholder(R.drawable.default_profile_image)
+//                        .networkPolicy(NetworkPolicy.OFFLINE) // for Offline
+//                         .placeholder(R.drawable.default_profile_image)
                         .into(holder.senderImageMsg);
                 Log.e("tag","from adapter, link : "+ message.getMessage());
             } else {
                 holder.user_profile_image.setVisibility(View.VISIBLE);
                 holder.senderImageMsg.setVisibility(View.GONE);
-                //holder.receiverImageMsg.setVisibility(View.VISIBLE);
+                holder.receiverImageMsg.setVisibility(View.VISIBLE);
                 Picasso.get()
                         .load(message.getMessage())
-                        .networkPolicy(NetworkPolicy.OFFLINE) // for Offline
-                         //.placeholder(R.drawable.default_profile_image)
+//                        .networkPolicy(NetworkPolicy.OFFLINE) // for Offline
+//                         .placeholder(R.drawable.default_profile_image)
                         .into(holder.receiverImageMsg);
                 Log.e("tag","from adapter, link : "+ message.getMessage());
 

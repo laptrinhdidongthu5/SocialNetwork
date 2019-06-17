@@ -252,7 +252,9 @@ public class ChatActivity extends AppCompatActivity {
             DatabaseReference user_message_key = rootReference.child("messages").child(messageSenderId).child(messageReceiverID).push();
             final String message_push_id = user_message_key.getKey();
 
-            final StorageReference file_path = imageMessageStorageRef.child(message_push_id + ".jpg");
+            Log.i("a",message_push_id);
+
+            final StorageReference file_path = imageMessageStorageRef.child(message_push_id );
 
             UploadTask uploadTask = file_path.putFile(imageUri);
             Task<Uri> uriTask = uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
@@ -267,7 +269,7 @@ public class ChatActivity extends AppCompatActivity {
             }).addOnCompleteListener(new OnCompleteListener<Uri>() {
                 @Override
                 public void onComplete(@NonNull Task<Uri> task) {
-                    if (task.isSuccessful()){
+//                    if (task.isSuccessful()){
                         if (task.isSuccessful()){
                             download_url = task.getResult().toString();
                             //Toast.makeText(ChatActivity.this, "From ChatActivity, link: " +download_url, Toast.LENGTH_SHORT).show();
@@ -296,7 +298,7 @@ public class ChatActivity extends AppCompatActivity {
                         } else{
                             SweetToast.warning(ChatActivity.this, "Failed to send image. Try again");
                         }
-                    }
+//                    }
                 }
             });
         }

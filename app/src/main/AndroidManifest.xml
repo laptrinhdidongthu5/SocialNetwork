@@ -96,13 +96,7 @@
             android:theme="@style/Base.Theme.AppCompat" />
 
         <!-- Firebase Messaging Service -->
-        <service android:name=".Utils.FirebaseMessagingService"
-        android:exported="true"
-        android:enabled="true">
-        <intent-filter>
-            <action android:name="com.google.firebase.MESSAGING_EVENT" />
-        </intent-filter>
-        </service>
+
         <service android:name=".Utils.FirebaseMessagingService"
             android:exported="true"
             android:enabled="true">
